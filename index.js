@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'views/pages')));
 
 app.set('view engine', 'ejs');
 
-app.get('/sistema-solar', (req, res) => {
+app.get('/', (req, res) => {
     // localhost:4000
     res.render('pages/planetas');
 })
