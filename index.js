@@ -5,6 +5,7 @@ const path = require('path');
 
 app.use(express.static('public'))
 app.use(express.static(path.join(__dirname, 'views/pages')));
+app.use(express.static(path.join(__dirname, 'views/pages/templates')));
 
 app.set('view engine', 'ejs');
 
